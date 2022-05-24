@@ -62,11 +62,59 @@ const findRemoveButtons = () => {
     })
 }
 
+const addBookToHTML = (obj) => {
+    bookList.insertAdjacentHTML('afterbegin', renderHTML(obj))
+    findRemoveButtons()
 
 
+}
+
+const addToBookList = (idBook, authorInput, titleInput) => {
+    bookObj = {
+        id: idBook,
+        title: titleInput,
+        author: authorInput
+    }
 
 
+    books[booksKey] = getFromLS(booksKey)
+    books[booksKey].push(bookObj)
+    addBookToHTML(bookObj)
+    addToLS(books[booksKey])
+}
 
+const getUniqueId = () => {
+    const data = getFromLS(booksKey);
+    let max = 0;
 
+    data.forEach((_, i) => {
+        if (data[i].id > max) {
+            max = data[i].id
+        }
+    })
+    console.log(max);
+    return max += 1;
+}
 
+const init = () => {
+    const data = getFromLS(booksKey)
+    if (data.length > 0) {
+        data.forEach((book) => {
+            addBookToHTML(book)
+        })
+    }
 
+    form.addEventListener('submit', (e) => {
+
+        e.preventDefault();
+
+        const bookId = getUniqueId()
+
+        const authorText = inputAuthor.value;
+        const titleText = inputTitle.value;
+
+        addToBookList(bookId, authorText, titleText)
+    })
+}
+
+init();
