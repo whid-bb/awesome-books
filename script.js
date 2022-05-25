@@ -135,3 +135,23 @@ const inputTitle = document.getElementById('title');
 const bookList = document.getElementById('book-list');
 
 new BooksList(form, inputAuthor, inputTitle, bookList).init();
+//spa
+const navContainer = document.querySelectorAll(".nav-container li");
+const navContainerArray = Array.from(navContainer);
+const sections = document.querySelectorAll("section");
+//console.log(sections);
+const sectionsArray = Array.from(sections);
+
+navContainerArray.forEach((ele)=> {
+  ele.addEventListener("click", function(e){
+    console.log(ele);
+     navContainerArray.forEach((ele)=>{
+       ele.classList.remove("active");
+     });
+    sectionsArray.forEach((section) =>{
+      section.style.display = "none";
+     });
+     e.currentTarget.classList.add("active");
+     document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
+  });
+});
