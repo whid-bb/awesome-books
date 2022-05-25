@@ -2,3 +2,82 @@
   margin: 0;
   padding: 0;
 }
+
+header h1 {
+  text-align: center;
+}
+
+#maincontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+#book-list {
+  border: 2px solid black;
+}
+
+#add-book {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  align-items: center;
+}
+
+.bookcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 12px;
+}
+
+.bookcontainer:nth-child(even) {
+  background-color: #00f;
+  color: #fff;
+}
+
+.remove-book {
+  width: 10%;
+  height: 30%;
+  border: 4px solid black;
+}
+
+.book-title {
+  font-size: 20px;
+  font-weight: normal;
+  width: 12px;
+  line-height: 0.9;
+}
+
+.book-author {
+  font-size: 20px;
+  font-weight: normal;
+  width: 12px;
+  line-height: 0.9;
+}
+
+.horizontal {
+  width: 30%;
+  margin: 20px auto;
+  background-color: black;
+}
+
+.text {
+  text-align: center;
+}
+
+#author {
+  margin: 10px;
+}
+
+#title {
+  margin-bottom: 10px;
+}
+
+.btn {
+  width: 100px;
+  background-color: #00f;
+  color: #fff;
+}
