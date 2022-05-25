@@ -14,6 +14,7 @@ header {
 
 h1 {
   text-align: center;
+  margin: 1rem 0;
 }
 
 #maincontainer,
@@ -102,7 +103,7 @@ nav {
   justify-content: space-between;
 }
 
-.nav-container>* {
+.nav-container > * {
   margin: 10px 1rem;
 }
 
@@ -113,7 +114,6 @@ nav ul {
 
 nav ul li {
   margin-left: 10px;
-
 }
 
 nav ul li::after {
@@ -151,10 +151,6 @@ section#contact-section ul {
 
 section#contact-section ul li {
   margin: 10px 0;
-}
-
-h1 {
-  margin: 1rem 0;
 }
 
 section.tab {

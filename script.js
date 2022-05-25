@@ -135,32 +135,25 @@ const inputTitle = document.getElementById('title');
 const bookList = document.getElementById('book-list');
 
 new BooksList(form, inputAuthor, inputTitle, bookList).init();
-//spa
-const navContainer = document.querySelectorAll(".nav-container li");
+// spa
+const navContainer = document.querySelectorAll('.nav-container li');
 const navContainerArray = Array.from(navContainer);
-const sections = document.querySelectorAll("section");
-//console.log(sections);
+const sections = document.querySelectorAll('section');
 const sectionsArray = Array.from(sections);
 
 navContainerArray.forEach((ele) => {
-  ele.addEventListener("click", function (e) {
-    // navContainerArray.forEach((ele) => {
-    //   console.log(ele);
-    //   ele.classList.remove("active");
-    // });
+  ele.addEventListener('click', (e) => {
     sectionsArray.forEach((section) => {
       section.classList.remove('active');
     });
-    const showElementById = document.querySelector(e.target.getAttribute('href'));
+    const showElementById = document.querySelector(
+      e.target.getAttribute('href'),
+    );
     showElementById.classList.add('active');
-
-    // e.currentTarget.classList.add("active");
-    // console.log(e.currentTarget);
-    // document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
   });
 });
 
 const dateTag = document.querySelector('.date');
-const date = new Date().toUTCString()
+const date = new Date().toUTCString();
 
 dateTag.innerHTML = date;
