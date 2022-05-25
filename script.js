@@ -142,16 +142,25 @@ const sections = document.querySelectorAll("section");
 //console.log(sections);
 const sectionsArray = Array.from(sections);
 
-navContainerArray.forEach((ele)=> {
-  ele.addEventListener("click", function(e){
-    console.log(ele);
-     navContainerArray.forEach((ele)=>{
-       ele.classList.remove("active");
-     });
-    sectionsArray.forEach((section) =>{
-      section.style.display = "none";
-     });
-     e.currentTarget.classList.add("active");
-     document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
+navContainerArray.forEach((ele) => {
+  ele.addEventListener("click", function (e) {
+    // navContainerArray.forEach((ele) => {
+    //   console.log(ele);
+    //   ele.classList.remove("active");
+    // });
+    sectionsArray.forEach((section) => {
+      section.classList.remove('active');
+    });
+    const showElementById = document.querySelector(e.target.getAttribute('href'));
+    showElementById.classList.add('active');
+
+    // e.currentTarget.classList.add("active");
+    // console.log(e.currentTarget);
+    // document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
   });
 });
+
+const dateTag = document.querySelector('.date');
+const date = new Date().toUTCString()
+
+dateTag.innerHTML = date;
