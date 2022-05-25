@@ -9,13 +9,25 @@
   </head>
 
   <body>
-    <header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">Awesome Books</div>
+        <ul>
+          <li class="nav-item active">
+            <a href="#maincontainer">List</a>
+          </li>
+          <li class="nav-item"><a href="#add-book-section">Add new</a></li>
+          <li class="nav-item"><a href="#contact-section">Contact</a></li>
+        </ul>
+      </div>
+      <div class="date">ss</div>
+    </nav>
+    <section id="maincontainer" class="active tab">
       <h1>All Awesome Books</h1>
-    </header>
-    <section id="maincontainer">
       <div id="book-list"></div>
-      <hr class="horizontal" />
-      <h3 class="text">Add a new book</h3>
+    </section>
+    <section id="add-book-section" class="tab">
+      <h1 class="text">Add a new book</h1>
       <form id="add-book">
         <div>
           <input type="text" id="title" placeholder="title" />
@@ -28,6 +40,19 @@
         </div>
       </form>
     </section>
+    <section id="contact-section" class="tab">
+      <h1 class="text">Contact information</h1>
+      <p>Do you have any questions or you just want to say "hello"?</p>
+      <p>You can reach out to us!</p>
+      <ul>
+        <li>Our email: email@email.com</li>
+        <li>Our phone number: +1 123455678</li>
+        <li>Our address Streetname 22, 437856 City, Country</li>
+      </ul>
+    </section>
+    <footer>
+      <div class="copy">© Copyright ...</div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

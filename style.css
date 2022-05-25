@@ -1,21 +1,31 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-header h1 {
+body {
+  width: 100%;
+}
+
+header {
+  margin-top: 4rem;
+}
+
+h1 {
   text-align: center;
+  margin: 1rem 0;
 }
 
-#maincontainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#maincontainer,
+section {
   margin: 0 auto;
-  width: 50%;
+  width: 628px;
 }
 
-#book-list {
+#book-list,
+.nav-container,
+footer .copy {
   border: 2px solid black;
 }
 
@@ -80,4 +90,78 @@ header h1 {
   width: 100px;
   background-color: #00f;
   color: #fff;
+}
+
+nav {
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-container > * {
+  margin: 10px 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 10px;
+}
+
+nav ul li::after {
+  content: "";
+  border-right: 1px solid #000;
+  padding-right: 10px;
+}
+
+nav ul li:last-child::after {
+  border-right: 0;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #00f;
+}
+
+footer {
+  margin-top: 4rem;
+  width: 100%;
+  padding: 10px;
+}
+
+footer .copy {
+  padding: 10px 1rem;
+}
+
+section#contact-section ul {
+  list-style-position: inside;
+}
+
+section#contact-section ul li {
+  margin: 10px 0;
+}
+
+section.tab {
+  display: none;
+}
+
+section.tab.active {
+  display: block;
+}
+
+.date {
+  margin-top: 10px;
+  font-weight: bold;
 }
