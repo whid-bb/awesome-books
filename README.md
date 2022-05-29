@@ -1,7 +1,6 @@
 # Awesome Books Project
 
-Set up an awesome book application from where a user can add and remove books from the list of books.
-
+Awesome Book app - add, remove from a list of books
 
 ## Built With
 
@@ -10,13 +9,8 @@ Set up an awesome book application from where a user can add and remove books fr
 - Javascript
 
 ## LIVE DEMO
+
 [live demo link](https://christabelle143.github.io/awesomebooks/).
-
-## Getting Started
-
- Inorder to be able to set this up locally and eventually run it, follow the steps;
-- Open your Gitbash or your code editor's terminal and run the command git clone git@github.com:Christabelle143/awesomebooks.git
-- Then you can pull the work from github to ur local machine using the git pull command.
 
 ## Authors
 
@@ -30,7 +24,6 @@ Set up an awesome book application from where a user can add and remove books fr
 
 - GitHub: [https://github.com/whid-bb/]
 - - LinkedIn: [https://www.linkedin.com/in/bartosz-ka%C5%BAmierczak-46a810235/]
-
 
 ## 🤝 Contributing
 
