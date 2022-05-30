@@ -7,9 +7,13 @@ const inputAuthor = document.getElementById('author');
 const inputTitle = document.getElementById('title');
 const bookList = document.getElementById('book-list');
 
-BooksList(form, inputAuthor, inputTitle, bookList).init();
+const bookListCl = new BooksList(form, inputAuthor, inputTitle, bookList);
 
-SpaFramework({
+bookListCl.init();
+
+const spa = new SpaFramework({
   menuItem: '.nav-container li',
   contentBlock: 'section',
 });
+
+spa.createSpa();
