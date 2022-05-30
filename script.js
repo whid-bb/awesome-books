@@ -12,5 +12,5 @@ new BooksList(form, inputAuthor, inputTitle, bookList).init();
 
 const spa = new SpaFramework({
   menuItem: '.nav-container li',
-  contentBlock: 'sections'
+  contentBlock: 'section'
 })
