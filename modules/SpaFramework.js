@@ -3,7 +3,6 @@ class SpaFramework {
     if (this.validSelectorAll(menuItem, contentBlock)) {
       this.menuItems = this.getDOMall(menuItem);
       this.contentBlocks = this.getDOMall(contentBlock);
-      this.createSpa();
     }
   }
 
