@@ -95,7 +95,7 @@ nav {
   justify-content: space-between;
 }
 
-.nav-container>* {
+.nav-container > * {
   margin: 10px 1rem;
 }
 
@@ -160,12 +160,10 @@ section.tab.active {
 
 input {
   margin-bottom: 10px;
-
 }
 
 .required-input {
   position: relative;
-
 }
 
 .required-input::after {
