@@ -78,14 +78,6 @@ footer .copy {
   text-align: center;
 }
 
-#author {
-  margin: 10px;
-}
-
-#title {
-  margin-bottom: 10px;
-}
-
 .btn {
   width: 100px;
   background-color: #00f;
@@ -103,7 +95,7 @@ nav {
   justify-content: space-between;
 }
 
-.nav-container > * {
+.nav-container>* {
   margin: 10px 1rem;
 }
 
@@ -164,4 +156,20 @@ section.tab.active {
 .date {
   margin-top: 10px;
   font-weight: bold;
+}
+
+input {
+  margin-bottom: 10px;
+
+}
+
+.required-input {
+  position: relative;
+
+}
+
+.required-input::after {
+  content: "*";
+  position: absolute;
+  color: #f00;
 }
