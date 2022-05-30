@@ -10,7 +10,7 @@ Awesome Book app - add, remove from a list of books
 
 ## LIVE DEMO
 
-[live demo link](https://christabelle143.github.io/awesomebooks/).
+[live demo link](https://whid-bb.github.io/awesome-books/)
 
 ## Authors
 
