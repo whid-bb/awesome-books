@@ -78,7 +78,7 @@ class BooksList extends Ls {
         return max;
     };
 
-    init() {
+    init = () => {
         const data = this.getFromLS(this.booksKey);
         if (data.length > 0) {
             data.forEach((book) => {

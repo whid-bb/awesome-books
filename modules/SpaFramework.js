@@ -22,7 +22,7 @@ class SpaFramework {
         return document.querySelectorAll(selector)
     }
 
-    createSpa() {
+    createSpa = () => {
         const menuItemsArr = Array.from(this.menuItems)
         const contentBlocksArr = Array.from(this.contentBlocks)
 
